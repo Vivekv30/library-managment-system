@@ -2,52 +2,64 @@
 {
     /* border: 2px solid; */
     position: fixed;
-    width: 250px;
+    width: 280px;
     height: 100vh;
     padding: 10px;
-    /* background-color: rgb(205, 205, 205); */
-    background-image: url('https://www.statusfacebook.com/img/Photos/Others/sidenav3.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)), url('https://www.statusfacebook.com/img/Photos/Others/sidenav3.jpg');
     background-size: cover;
     z-index: 1;
-}
-.adminNavbar ul
-{
-    /* border: 2px solid; */
 }
 .adminNavbar ul li
 {
     /* border: 2px solid blue; */
     margin: 5px 0px;
     width: 100%;
-    /* background-color: white; */
-   
+
 }
-.adminNavbar ul li:hover
+.adminNavbar ul li .link:hover
 {
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.584);
-    border-radius: 20px;
+    background-color: rgba(9, 9, 9, 0.508);
+    border-radius: 10px;
     transition: all 0.5s;
+    /* color: rgba(25, 25, 25, 0.69); */
 }
 .adminNavbar ul  li .link
 {
     /* border: 2px solid; */
-    display: block;
-    padding: 10px 20px;
+    display: inline-block;
    font-size: 17px;
    font-weight: 550;
    color: rgb(255, 255, 255);
+   background-color: rgba(40, 40, 41, 0.449);
+    border-radius: 10px;
+}   
+.adminNavbar ul  li .link 
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .adminNavbar ul  li .link .profile
 {
-    height: 150px;
+    /* border: 2px solid; */
+    width: inherit;
+    height: inherit;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    /* background-image: url('https://images.statusfacebook.com/profile_pictures/real-desi-girls/desi-girl-profile-pic-03.jpg');
-    background-size: cover;  */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.104),rgba(0, 0, 0, 0.011),rgba(0, 0, 0, 0.6)), url('https://image.shutterstock.com/mosaic_250/2780032/1194497251/stock-photo-portrait-of-smiling-red-haired-millennial-man-looking-at-camera-sitting-in-caf-or-coffeeshop-1194497251.jpg');
+    background-size: cover; 
+    border-radius: 10px;
 }
-.adminNavbar ul  li .link .profile img
+.adminNavbar ul li .plink
 {
-    border-radius: 30%;
+    height: 160px;
+    text-align: center;
 }
+.adminNavbar ul  li .link .profile h4
+{
+    position: relative;
+    top: 120px;
+    color: rgb(249, 140, 38);
+} 

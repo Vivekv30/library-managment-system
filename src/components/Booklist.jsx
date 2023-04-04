@@ -1,6 +1,6 @@
 const BookList = () => {
     return ( 
-        <div>
+        <div className="booklist">
             <h1>book list page.........//////////////</h1>
         </div>
      );

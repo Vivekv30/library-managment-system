@@ -1,28 +1,26 @@
+import { Link } from "react-router-dom";
 
 
 const UserPage = () => {
   return (
     <div className="UserLogin">
       <div className="loginpage1">
-        <div className="leftside1">
-          <img src="https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg" alt="" />
-        </div>
         <div className="rightside1">
           <div className="content11">
             <h1>User Login Page</h1>
             <hr />
           </div>
           <div className="form1">
-            <form action="">
+            <form action="" >
               <div className="side">
-                <h3>Name:</h3>
-                <h3>Password:</h3>
+                <input required autoFocus type="email" placeholder="Enter emial address" /><hr />
+                <input required type="password" placeholder="Enter password" /><hr /><br />
+                <Link className="forgotPassword" to='/'> forgot password?</Link><br/><br/>
               </div>
-              <div className="side">
-                <input type="email" placeholder="Enter emial address" />
-                <input type="password" placeholder="Enter password" />
+              <div>
+              <button>Sign in</button>
+              <Link className="signup">Sign up</Link>
               </div>
-              <button>Submit</button>
             </form>
           </div>
         </div>

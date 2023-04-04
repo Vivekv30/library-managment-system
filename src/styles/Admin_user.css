@@ -1,103 +1,94 @@
-.AdminLogin
+.AdminLogin,.UserLogin
 {
     /* border: 2px solid red; */
     height: 100vh;
-    background-color: rgb(6, 136, 93);
-}
-.UserLogin
-{
-    /* border: 2px solid red; */
-    height: 100vh;
-    background-color: rgb(6, 136, 93);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.385),rgba(0, 0, 0, 0.637)),url('https://images.wallpaperscraft.com/image/single/books_table_lamp_113765_1366x768.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .loginpage1
 {
     /* border: 3px solid blue; */
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50%;
-    width: 50%;
-    position: relative; 
-    top: 140px;
-    left: 25%;
+    width: 600px;
     border-radius: 10px;
-    box-shadow: 4px 4px 4px rgb(97, 91, 91);
 }
-.loginpage1 .leftside1
-{
-    /* border: 2px solid gold; */
-    width: 50%;
-}
-.loginpage1 .leftside1 img
-{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-}
-/* .form form input{
-    border: 2px solid;
-    display: block;
-} */
 .rightside1
 {
-    /* border: 2px solid purple; */
-    width:50%;
-    background-color: white;
+    border: 5px rgba(90, 90, 90, 0.156);
+    border-style: ridge outset;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.567);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items: center;
+    border-radius: 40px;
 }
-.content11
-{
-    /* border: 1px solid; */
-    text-align: center;
+.rightside1 hr{
+    border: 0.5px solid rgba(255, 255, 255, 0.488);
 }
 .form1{
-    display:inline-block;
-    width: 300px;
+    width: 400px;
     /* border: 2px solid green; */
     position: relative;
     top: 70px;
 }
-.form1 form{
-    display: flex;
-    flex-wrap: wrap;
-    /* align-items: center; */
-    justify-content: center;
-}
 .form1 form input{
-   width: 190px;
-   height: 25px;
-   margin-top: 5px;
-   /* margin:0px 0px 10px 10px; */
+   width: 100%;
+   height: 40px;
+   margin-top: 15px;
+   background-color:transparent;
+   border: none;
+   outline: none;
+   color: white;
+   padding-left:10px ;
+   font-size: 19px;
+   /* border: 2px solid; */
 }
-.side{
-
+.form1 form .forgotPassword
+{
     /* border: 2px solid; */
-    display: flex;
-    flex-direction: column;
-    align-items:  flex-end;
-    justify-content: space-evenly;  
-    height: 60px;
-
+    margin-left:280px;
+    margin-top: 8px;
+    color: rgb(202, 119, 59);
 }
 
 .content11 h1{
     color: rgb(6, 136, 93);
 }
-form button
+form button,.signup
 {
-    position: relative;
-    top: 15px;
-    left: 100px;
-   padding: 5px 20px;
-   border-radius: 4px;
+   width: 120px;
+   height: 40px;
+   border-radius: 9px;
    border: none;
    box-shadow: 2px 4px 7px rgb(22, 80, 50) inset;
    color: white;
-   background-color: rgb(6, 136, 93);;
+   background-color: rgba(55, 103, 105, 0.77);
+   margin-left: 50px;
+   font-size: 17px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form .signup
+{ 
+   padding: 10px 33px;
+   margin-left: 70px;
+}
+form button:hover
+{
+    background-color: rgba(55, 103, 105, 0.911);
+}
+form .signup:hover
+{
+    background-color: rgba(55, 103, 105, 0.911);
 }
